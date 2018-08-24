@@ -5,7 +5,7 @@ using System.IO;
 
 namespace CrozzleApplication
 {
-    public class Validator
+    class Validator
     {
         #region properties - errors
         public static List<String> Errors { get; set; }
