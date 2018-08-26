@@ -265,14 +265,14 @@ namespace CrozzleApplication
                             {
                                 // Get the value of the background colour for an empty TD (HTML table data).
                                 aConfiguration.BGcolourEmptyTD = aConfigurationItem.KeyValue.Value.Trim();
-                                if (!Validator.IsHexColourCode(aConfiguration.BGcolourEmptyTD))
+                                if (!Validator.IsBoolean(aConfiguration.BGcolourEmptyTD))
                                     Errors.Add(String.Format(ConfigurationErrors.ColourError, aConfigurationItem.KeyValue.OriginalKeyValue, Validator.Errors[0]));
                             }
                             else if (aConfigurationItem.IsBGcolourNonEmptyTD)
                             {
                                 // Get the value of the background colour for a non empty TD (HTML table data).
                                 aConfiguration.BGcolourNonEmptyTD = aConfigurationItem.KeyValue.Value.Trim();
-                                if (!Validator.IsHexColourCode(aConfiguration.BGcolourNonEmptyTD))
+                                if (!Validator.IsBoolean(aConfiguration.BGcolourNonEmptyTD))
                                     Errors.Add(String.Format(ConfigurationErrors.ColourError, aConfigurationItem.KeyValue.OriginalKeyValue, Validator.Errors[0]));
                             }
                             else if (aConfigurationItem.IsMinimumNumberOfRows)

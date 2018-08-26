@@ -52,7 +52,7 @@ namespace CrozzleApplication
         }
 
         // Check that a string field is a hex colour code such as #56ab7f.
-        public static Boolean IsHexColourCode(String hexColour)
+        public static Boolean IsBoolean(String hexColour)
         {
             Errors = new List<String>();
 
